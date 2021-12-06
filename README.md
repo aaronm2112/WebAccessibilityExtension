@@ -1,4 +1,4 @@
-# Accessibility Meter
+# Web Accessibility Extension
 ## Requirements
 This extension is currently only usable by Firefox and has been tested using version 89.0.
 ## Features
