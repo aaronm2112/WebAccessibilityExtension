@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" style="height:100vh;">
+    <head>  
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Accessibility Report</title>
+    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <style>
+      .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+        }
+      }
+      .black-background {background-color:#000000;
+}
+    </style>
+    </head>
+    <!--- Start of main content --->
+    <body style="background-color:lightgrey; height:100%;">
+        <div class="container-lg container-md">
+            <div class="px-4 pt-4" style="height:100%; background:rgba(255,255,255,0.75);">
+                <main class="col-lg-12 ms-sm-auto">
+                    <div class="shadow p-3 rounded-3 text-break" style="background-color:darkred;">
+                        <h1 class="h2 display-5" id="report_heading" style="color: white">Accessibility Report</h1>
+                    </div>
+
+                    <hr class="mt-3 mb-0">
+                    <div class="row">
+                        <div class="col-9 p-2">
+                          <input type="text" class="form-control" placeholder="URL" aria-label="URL" id="URL">
+                        </div>
+                        <div class="col p-2">
+                            <button type="button" class="btn btn-primary black-background" id="submit">Generate Report</button>
+                        </div>
+                      </div>
+                      <div id="main-content">
+                    <div class="p-2 mt-2" id="errors-heading" style="display: none;">
+                        <ul>
+
+                            <li><h5 class="display-6">Reported Errors</h5></li>
+                            <li style="float:right"><button type="button" class="btn btn-primary m-1 black-background" id="btnAdvReport">Advanced Report</button></li>
+                            <li style="float:right"><button type="button" class="btn btn-primary m-1 black-background" id="btnEZReport" disabled = "true">Basic Report</button></li>
+                        </ul>
+                    </div>
+                    <hr class="mt-0 mb-3">
+                    
+                    <div class="shadow rounded table-responsive mb-4">  
+                        <table class="table table-bordered table-dark table-striped mb-0 display-block" style="display: none;" id = "report_tbl1">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody id = "report_body1"></tbody>
+                        </table>
+                    </div>
+                    <div class="shadow rounded table-responsive mb-4">  
+                      <table class="table table-bordered table-dark display-block table-striped mb-0" style="display: none;" id = "report_tbl2">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Details</th>
+                                  <th scope="col">Action</th>
+                                  <th scope="col">Guideline</th>
+                              </tr>
+                          </thead>
+                          <tbody id = "report_body2"></tbody>
+                      </table>
+                    </div>
+                    <div>
+                        <hr class="mt-3 mb-1 w-75" style="margin:auto;">
+                        
+                        <hr class="mt-1 mb-3 w-75" style="margin:auto;">
+                    </div>
+                    
+                </main>
+            </div>
+        </div>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="api_script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+    </body>
+</html>
