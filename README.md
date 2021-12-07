@@ -21,5 +21,7 @@ The extension generates a simulated accessibility report using the WAVE API.
 #### 5. Select the "manifest.json" file in the root of the project directory and click "Open".
 ![Alt text](/screenshots/select_manifest.png?raw=true "Optional Title")
 
-#### 6. Done! The extension is now temporarily installed. Once you close the browser, the extesion will be un-installed. More information on how to interact with the extension is available in the UI documentation.
+#### 6. Done! The extension is now temporarily installed. Once you close the browser, the extesion will be un-installed. 
 
+#### 7. To access the extension, right click anywhere on a page and select "Generate Accessibility Report"
+![Alt text](/screenshots/generate.png?raw=true "Optional Title")
